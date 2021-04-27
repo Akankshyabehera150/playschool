@@ -1,0 +1,183 @@
+:root{ 
+    --gradient: linear-gradient(90deg, blue, red);
+    }
+    
+    
+    *{
+    
+       font-family: 'Poppins', sans-serif; 
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+        border: none; outline: none; text-decoration: none; 
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+    *::selection{
+        background: royalblue;
+        color: white;
+    
+    }
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+    
+    html::-webkit-scrollbar{
+        width: 0.5cm;
+    }
+    
+    html::-webkit-scrollbar-track{
+        background: rgb(236, 229, 232);
+    }
+    html::-webkit-scrollbar-thumb{
+        background:linear-gradient( rgb(183, 183, 202), red);
+    
+    }
+    body{
+        height: 600cm;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0%; left: 0%;
+        z-index: 1000;
+        padding: 1.5rem 7%;
+        background: var(--gradient);
+        box-shadow:0 .1rem 3rem rgba(0,0,0, .3)
+    }
+    header .Kiddo{
+        color: silver;
+        font-size:2.5rem ;
+        
+    }
+    
+    header .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+    header .navbar ul li{
+        margin: 0 1rem;
+    }
+    
+    header .navbar ul li a{
+        font-size: 2rem;
+        color: antiquewhite;
+    }
+     header .navbar ul li a:hover{
+         color: rgb(56, 42, 42);
+     }
+      header #login{
+          font-size: 3rem;
+          color: antiquewhite;
+          cursor: pointer;
+      }
+    
+      header #login:hover{
+          color: rgb(56, 42, 42);
+      }
+       header #menu{
+         font-size: 3rem;
+         color: antiquewhite;
+         cursor: pointer;
+         display: none;
+       }
+    
+    
+    
+    
+    
+    
+    @media (max-width:768px)
+    {
+        html{
+            font-size: 55%;
+        }
+    
+    
+       header #menu{
+        display: block;
+       }
+     header .navbar{
+         position: fixed;
+         top: 6.4rem;
+         left: 0;
+         width: 100%;
+         background: slategrey;
+     }
+    
+     header .navbar ul{
+         flex-flow: column;
+         padding: 2rem 0;
+     }
+      header .navbar ul li{
+          margin: 1.5rem 0;
+          text-align: center;
+          width: 100%;
+      }
+    
+      header .navbar ul li a{
+          font-size: 2.5rem;
+          display: block;
+      }
+    
+      header .navbar ul li a.active,
+      header .navbar ul li a:hover{
+          color: purple;
+      }
+    
+      .login-form{
+          height: 100%;
+          width: 100%;
+          position: fixed;
+          top: 0; left: 0;
+          z-index: 1000;
+          background: rgba(0,0,0, .3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+    
+      .login-form form{
+          width: 35rem;
+          background: antiquewhite;
+          margin: 0 2rem;
+          padding: 1rem 3rem;
+          border-radius: .5rem;
+          box-shadow: blue;
+          position: relative;
+    
+    
+      }
+      .login-form form h3{
+          font-size: 3rem;
+          color: crimson;
+          text-shadow: darkblue;
+          padding: 1rem 0;
+      }
+    
+      .login-form form .box{
+          width: 100%;
+          padding: 1rem 0;
+          margin: 1rem 0;
+          border-bottom:  .2rem rgb(233, 71, 71);
+          font-size: 1.6 rem;
+          color: royalblue;
+          text-transform: none;
+    
+      }
+    .login-form form .box::name{
+        text-transform: capitalize;
+    }
+    
+    .login-form form .box:focus{
+        border-color: blue;
+    }
+     
+    
+    }
